@@ -16,7 +16,18 @@ scopes:
       tuple_of_identifiers > identifier,
       generic_resolution > identifier,
     ''': 'punctuation.definition.identity',
-    'definition > "="': 'keyword.operator',
+    'definition > "="': 'variable',
+    '''
+      definition > ":",
+      named_argument > ":",
+      list_unpack > "~",
+      expression > "~",
+      comparator,
+      logical,
+      add_sub,
+      mult_div,
+      exp
+    ''': 'constant.other.symbol',
     'named_argument > identifier': 'variable',
     '''
       let > "let",
