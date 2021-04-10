@@ -1,6 +1,6 @@
 {
   "name": "language-azor",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "An Atom parser for Azor",
   "repository": "git@github.com:cstuartroe/language-azor.git",
   "main": "index.js",
