@@ -1,0 +1,23 @@
+{
+  "name": "language-azor",
+  "version": "0.0.0",
+  "description": "An Atom parser for Azor",
+  "repository": "https://github.com/cstuartroe/language-azor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Conor Stuart-Roe",
+  "license": "ISC",
+  "engines": {
+    "atom": "*"
+  },
+  "dependencies": {
+    "nan": "^2.14.2",
+    "tree-sitter-azor": "^1.0.7"
+  },
+  "devDependencies": {
+    "electron": "^6.1.12",
+    "electron-rebuild": "^2.3.5"
+  }
+}

@@ -1,0 +1,30 @@
+name: 'Azor'
+scopeName: 'azor'
+type: 'tree-sitter'
+parser: 'tree-sitter-azor'
+fileTypes: ['azor']
+scopes:
+    'base_type > identifier, generics > identifier': 'entity.name.type',
+    'comment': 'comment',
+    'string': 'string',
+    'numeric, bool': 'constant.numeric.integer',
+    '''
+      definition > identifier,
+      simple > identifier,
+      list_unpack > identifier,
+      let > identifier,
+      tuple_of_identifiers > identifier,
+      generic_resolution > identifier,
+    ''': 'punctuation.definition.identity',
+    'definition > "="': 'keyword.operator',
+    'named_argument > identifier': 'variable',
+    '''
+      let > "let",
+      let > "<-",
+      let > "in",
+      if > "if",
+      if > "then",
+      if > "else",
+      list_unpack > "<-",
+      empty_list > "of"
+    ''': 'punctuation.definition.italic'
