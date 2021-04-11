@@ -7,7 +7,7 @@ scopes:
     'base_type > identifier, generics > identifier': 'entity.name.type',
     'comment': 'comment',
     'string': 'string',
-    'numeric, bool': 'constant.numeric.integer',
+    'numeric, bool, char': 'constant.numeric.integer',
     '''
       definition > identifier,
       simple > identifier,
@@ -22,6 +22,8 @@ scopes:
       named_argument > ":",
       list_unpack > "~",
       expression > "~",
+      prefix > "-",
+      prefix > "!",
       comparator,
       logical,
       add_sub,
